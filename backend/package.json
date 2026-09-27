@@ -1,0 +1,40 @@
+{
+  "name": "blog-platform-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Blog Platform",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "dev:mem": "node devServer.js",
+    "seed": "node utils/seed.js",
+    "test:api": "node utils/testRunner.js"
+  },
+  "keywords": [
+    "mern",
+    "blog",
+    "express",
+    "mongoose"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.9.5",
+    "morgan": "^1.10.0",
+    "multer": "^2.4.0"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^11.3.0",
+    "nodemon": "^3.1.9"
+  },
+  "allowScripts": {
+    "mongodb-memory-server@11.3.0": true
+  }
+}
